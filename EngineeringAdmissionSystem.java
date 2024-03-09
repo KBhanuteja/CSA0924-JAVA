@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EngineeringAdmissionSystem {
+public class EngineeringAdmissionSystem{
     private ArrayList<EngineeringStudent> students;
 
     public EngineeringAdmissionSystem() {
@@ -22,7 +22,6 @@ public class EngineeringAdmissionSystem {
         EngineeringAdmissionSystem system = new EngineeringAdmissionSystem();
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt the user to enter student information and add each student to the system
         while (true) {
             System.out.println("Enter student information:");
             System.out.print("Name: ");
@@ -45,7 +44,6 @@ public class EngineeringAdmissionSystem {
             }
         }
 
-        // Display all students in the system
         system.displayAllStudents();
     }
 }
@@ -61,7 +59,6 @@ class Person {
         this.address = address;
     }
 
-    // Getter and setter methods
 }
 
 class EngineeringStudent extends Person {
@@ -72,5 +69,4 @@ class EngineeringStudent extends Person {
         this.gpa = gpa;
     }
 
-    // Getter and setter methods
 }
